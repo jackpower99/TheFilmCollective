@@ -18,6 +18,7 @@ class Movie : AppCompatActivity() {
 
     app = this.application as MovieApp
 
+
     addMovieBtn.setOnClickListener {
       app.moviesStore.create(MovieModel(title = movieTitle.text.toString(), director = movieDirector.text.toString(), releaseDate = movieReleaseDate.text.toString(), earnings = movieEarnings.text.toString().toLong(),
         description = movieDescription.text.toString(), rating = movieRating.rating.toLong()))
